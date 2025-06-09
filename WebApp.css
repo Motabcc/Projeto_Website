@@ -1,0 +1,118 @@
+body{
+    background-color: rgb(255,255,255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:  center;
+} /* */
+
+.imagem img{
+    flex-shrink: 0;
+    width: 174%;
+    max-height: 650px;
+    margin-left: -37.6%;
+    margin-top: -5%;
+    transform: scaleX(-1);
+    z-index: -1;
+}
+
+.textoMenu{
+    z-index: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;/* espaçamento interno*/
+    margin: 10px; /*Espaçamento externo */
+    font-size: 300%;
+    margin-top: -30%;
+    font-family: Chalkduster, fantasy;
+    font-weight: 700;
+
+}
+.textoInicial{
+    z-index: 1;
+    margin-top: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:  center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;/* espaçamento interno*/
+    width: 70%;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}   
+.segundoTexto{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:  center;
+    background-color: white;
+    padding: 20px;/* espaçamento interno*/
+    width: 30%;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;    
+}
+.containerBotoes{
+    display: flex;
+    gap:  15px;
+    justify-content: center;
+}
+.estiloBotoes{
+    padding: 15px 30px; 
+    font-size: 18px; 
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0);             
+    border: 2px, solid black;             
+    border-radius: 5px;     
+    cursor: pointer;
+    width: 200px;
+}
+.estiloBotoes:focus{
+  background-color: rgb(39, 156, 3);
+  border: 2px solid rgb(0, 0, 0);
+  color: black;
+  cursor: pointer;
+}
+.estiloBotoesDois{
+    padding: 15px 30px; 
+    font-size: 18px; 
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0);             
+    border: 2px, solid black;             
+    border-radius: 5px;     
+    cursor: pointer;
+    width: 200px;
+}
+.estiloBotoesDois:focus{
+  background-color: rgb(39, 156, 3);
+  border: 2px solid rgb(0, 0, 0);
+  color: black;
+  cursor: pointer;
+}
+.estiloBotoesTres{
+    padding: 15px 30px; 
+    font-size: 18px; 
+    background-color: rgb(39, 156, 3); 
+    color: rgb(255, 255, 255);             
+    border: 2px, solid black;             
+    border-radius: 5px;     
+    cursor: pointer;
+    width: 200px;
+}
+
+
+.inpt{
+    padding: 15px 30px; 
+    font-size: 18px; 
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);             
+    border: 2px, solid black;            
+    border-radius: 5px;       
+    cursor: pointer;
+    width: 150px;
+}
