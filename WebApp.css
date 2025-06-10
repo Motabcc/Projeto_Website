@@ -18,20 +18,33 @@ body{
     align-items: center;
     justify-content: center;
 }
-.imagem {
+.imagemUm {
     width: 100%;
-    height: 450px; /* ou qualquer altura que você quiser */
+    height: 900px; /* ou qualquer altura que você quiser */
     overflow: hidden;
     position: relative;
     z-index: -1;
 }
 
-.imagem img {
+.imagemUm img {
     width: 100%;
-    height: 100%;
+    height: 80%;
     object-fit: cover;
     display: block;
     transform: scaleX(-1); /* se quiser o efeito espelhado */
+}
+.imagemDois{
+    width: 80%;
+    height: 80%;
+    margin-top: 4%;
+    margin-left: 55%;
+    margin-right: 0;
+}
+.imagemDois img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    display: block;
 }
 .textoMenu{
     z-index: 1;
@@ -51,9 +64,8 @@ body{
     font-weight: 600;
     color:cadetblue;
     font-family: Arial, sans-serif;
-
     z-index: 1;
-    margin-top: 18%;
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,6 +76,22 @@ body{
     border-radius: 20px;
     border: 0.01px solid rgb(207, 205, 205);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.textoCarangueijo{
+    font-weight: 500;
+    color:rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    z-index: 1;
+    margin-top: -34%;
+    margin-left: 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:  center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;/* espaçamento interno*/
+    width: 40%;
+    border-radius: 20px;
 }
 .segundoTexto{
     margin-top: 1%;
@@ -84,28 +112,37 @@ body{
     justify-content: center;
 }
 .estiloBotoesRetangulo{
+    transition: transform 0.3s ease;
+    margin-top: 20px;
     padding: 15px 30px; 
     font-size: 20px;
     font-weight: 500; 
     background-color: #ffffff; 
     color: rgb(0, 0, 0);             
-    border: 0.01px solid rgb(207, 205, 205);            
+    border: 0.5px solid rgb(0, 0, 0);              
     border-radius: 20px;     
     cursor: pointer;
-    width: 200px;
+    width: 300px;
+    height: 60px;
+}
+.estiloBotoesRetangulo:hover{
+    transform: translateY(-5px);
 }
 .estiloBotoesRetangulo:focus{
+    margin-top: 20px;
     padding: 15px 30px; 
     font-size: 20px;
     font-weight: 500; 
     background-color: rgb(39, 156, 3); 
     color: rgb(0, 0, 0);             
-    border: 0.01px solid rgb(207, 205, 205);            
+    border: 0.5px solid rgb(0, 0, 0);              
     border-radius: 20px;     
     cursor: pointer;
-    width: 200px;
+    width: 300px;
+    height: 60px;
 }
 .estiloBotoesQuadrado{
+    transition: transform 0.3s ease;
     padding: 15px 30px; 
     font-size: 40px;
     font-weight:bold; 
@@ -116,6 +153,9 @@ body{
     cursor: pointer;
     width: 200px;
     height: 160px;
+}
+.estiloBotoesQuadrado:hover{
+    transform: translateY(-5px);
 }
 .estiloBotoesQuadrado:focus{
     padding: 15px 30px; 
@@ -130,16 +170,18 @@ body{
     height: 160px;
 }
 .estiloBotoesDois{
+    margin-top: 50px;
     padding: 15px 30px; 
-    font-size: 18px; 
+    font-size: 20px; 
     background-color: rgb(39, 156, 3); 
     color: rgb(0, 0, 0);             
     border: 0.01px solid rgb(207, 205, 205);             
-    border-radius: 20px;     
+    border-radius: 14px;     
     cursor: pointer;
-    width: 200px;
+    width: 250px;
 }
 .inpt{
+    transition: transform 0.3s ease;
     padding: 15px 30px; 
     font-size: 20px;
     font-weight: bold; 
@@ -149,6 +191,9 @@ body{
     border-radius: 20px;       
     cursor: pointer;
     width: 200px;
+}
+.inpt:hover{
+    transform: translateY(-5px);
 }
 .botaoSelecionado {
     background-color: rgb(39, 156, 3);
