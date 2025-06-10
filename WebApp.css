@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -50,6 +51,7 @@ body{
     font-weight: 600;
     color:cadetblue;
     font-family: Arial, sans-serif;
+
     z-index: 1;
     margin-top: 18%;
     display: flex;
@@ -62,7 +64,7 @@ body{
     border-radius: 20px;
     border: 0.01px solid rgb(207, 205, 205);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}   
+}
 .segundoTexto{
     margin-top: 1%;
     display: flex;

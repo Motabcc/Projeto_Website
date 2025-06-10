@@ -1,6 +1,7 @@
 //alert("Oi") //Cria um alerta e interrompe toda a execução
 console.log("Script Inicializado");
 
+
 const botoesTipo = document.querySelectorAll('.tipoDoacao');
 const inputNome = document.getElementById("inputNome"); //Pega um elemento pelo ID
 const inputSenha = document.getElementById("inputSenha"); //Pega um elemento pelo ID; const = constante
@@ -72,4 +73,5 @@ botoesTipo.forEach(botao => {
 btnPagamento.addEventListener('click', btnPagamentoClick);
 function btnPagamentoClick(){
     window.open('https://www.youtube.com/watch?v=LavcrI0F6LE', 'popupPagamento', 'width=600,height=400');
+
 }
