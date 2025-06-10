@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: rgb(255,255,255);
+    font-family: sans-serif;
+} /* */
+.centralizaContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.imagem {
+    width: 100%;
+    height: 450px; /* ou qualquer altura que você quiser */
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transform: scaleX(-1); /* se quiser o efeito espelhado */
+}
+.textoMenu{
+    z-index: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;/* espaçamento interno*/
+    margin: 10px; /*Espaçamento externo */
+    font-size: 300%;
+    margin-top: -30%;
+    font-family: Chalkduster, fantasy;
+    font-weight: 700;
+
+}
+.textoInicial{
+    font-weight: 600;
+    color:cadetblue;
+    font-family: Arial, sans-serif;
+    z-index: 1;
+    margin-top: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:  center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;/* espaçamento interno*/
+    width: 60%;
+    border-radius: 20px;
+    border: 0.01px solid rgb(207, 205, 205);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}   
+.segundoTexto{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:  center;
+    background-color: white;
+    padding: 20px;/* espaçamento interno*/
+    width: 30%;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;    
+}
+.containerBotoes{
+    display: flex;
+    gap:  15px;
+    justify-content: center;
+}
+.estiloBotoesRetangulo{
+    padding: 15px 30px; 
+    font-size: 20px;
+    font-weight: 500; 
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0);             
+    border: 0.01px solid rgb(207, 205, 205);            
+    border-radius: 20px;     
+    cursor: pointer;
+    width: 200px;
+}
+.estiloBotoesQuadrado{
+    padding: 15px 30px; 
+    font-size: 40px;
+    font-weight:bold; 
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0);             
+    border: 0.01px solid rgb(207, 205, 205);             
+    border-radius: 20px;    
+    cursor: pointer;
+    width: 200px;
+    height: 160px;
+}
+.estiloBotoesDois{
+    padding: 15px 30px; 
+    font-size: 18px; 
+    background-color: rgb(39, 156, 3); 
+    color: rgb(0, 0, 0);             
+    border: 0.01px solid rgb(207, 205, 205);             
+    border-radius: 20px;     
+    cursor: pointer;
+    width: 200px;
+}
+.inpt{
+    padding: 15px 30px; 
+    font-size: 20px;
+    font-weight: bold; 
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);             
+    border: 0.01px solid rgb(207, 205, 205);            
+    border-radius: 20px;       
+    cursor: pointer;
+    width: 200px;
+}
+.botaoSelecionado {
+    background-color: rgb(39, 156, 3);
+    color: rgb(0, 0, 0);
+    border: 0.01px solid rgb(207, 205, 205); 
+}
