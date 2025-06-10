@@ -7,6 +7,7 @@ const inputSenha = document.getElementById("inputSenha"); //Pega um elemento pel
 const btnSalvar = document.getElementById("btnSalvar"); //Pega um elemento pelo ID
 const divResponse = document.getElementById("response");
 const Head = document.getElementById("head")
+const btnPagamento = document.getElementById("btnPagamento")
 
 
 if (btnSalvar) {
@@ -67,3 +68,8 @@ botoesTipo.forEach(botao => {
             botao.classList.add('botaoSelecionado');
         });
     });
+
+btnPagamento.addEventListener('click', btnPagamentoClick);
+function btnPagamentoClick(){
+    window.open('https://www.youtube.com/watch?v=LavcrI0F6LE', 'popupPagamento', 'width=600,height=400');
+}
