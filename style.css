@@ -14,7 +14,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
-    /*Box-shadow,lembrar de bota umaprofundidade*/
+   
 }
 
 .container {
@@ -74,12 +74,10 @@ body {
     background-position: center center;
     background-size: cover;
     height: 100vh;
-    /* Ocupa a altura total da tela */
     position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    /* Alinha o conteúdo à esquerda */
     padding-top: 80px;
     box-sizing: border-box;
 }
@@ -158,55 +156,50 @@ body {
     margin: 15px 0 20px 44.7vw;
 }
 
-
-
-
-
-
 /* Container que alinha os cards lado a lado */
 .container-de-cards {
     display: flex;
-    justify-content: center; /* Centraliza os cards na página */
-    gap: 30px; /* Espaço entre os cards */
-    padding: 40px 20px; /* Espaçamento geral */
-    flex-wrap: wrap; /* Permite que os cards quebrem para a linha de baixo em telas menores */
+    justify-content: center;
+    gap: 30px; 
+    padding: 40px 20px; 
+    flex-wrap: wrap; 
 }
 
 /* Estilo principal do card */
 .card {
-    width: 300px; /* Largura do card */
-    background-color: #ffffff; /* Fundo branco */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    overflow: hidden; /* Garante que a imagem não saia das bordas arredondadas */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave */
+    width: 300px; 
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 /* Efeito ao passar o mouse por cima do card */
 .card:hover {
-    transform: translateY(-5px); /* Eleva o card um pouco */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 /* Estilo da imagem dentro do card */
 .card img {
-    width: 100%; /* Faz a imagem ocupar toda a largura do card */
-    height: 180px; /* Altura fixa para a imagem */
-    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    width: 100%; 
+    height: 180px; 
+    object-fit: cover;
 }
 
-/* Container para o conteúdo de texto do card */
+
 .card-content {
     padding: 20px;
 }
 
-/* Estilo para o título dentro do card */
+
 .card-content h3 {
     margin: 0 0 10px 0;
     color: #333;
 }
 
-/* Estilo para o parágrafo dentro do card */
+
 .card-content p {
     margin: 0;
     font-size: 15px;
@@ -219,8 +212,8 @@ body {
 
 /* Estilo geral do rodapé */
 .site-footer {
-  background-color: #f8f9fa; /* Cor de fundo clara */
-  color: #6c757d; /* Cor do texto */
+  background-color: #f8f9fa; 
+  color: #6c757d;
   padding: 40px 0;
   font-family: Arial, sans-serif;
 }
@@ -228,8 +221,8 @@ body {
 /* Container principal das colunas */
 .footer-container {
   display: flex;
-  justify-content: space-around; /* Espaço entre as colunas */
-  flex-wrap: wrap; /* Para quebrar a linha em telas menores */
+  justify-content: space-around;
+  flex-wrap: wrap; 
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -237,15 +230,15 @@ body {
 
 /* Estilo de cada coluna */
 .footer-column {
-  width: 200px; /* Largura de cada coluna */
+  width: 200px;
   margin-bottom: 20px;
 }
 
 .footer-column h4 {
   font-size: 16px;
-  color: #343a40; /* Cor do título da coluna */
+  color: #343a40; 
   margin-bottom: 15px;
-  text-transform: uppercase; /* Para deixar em maiúsculas */
+  text-transform: uppercase;
 }
 
 .footer-column ul {
@@ -259,19 +252,19 @@ body {
 }
 
 .footer-column ul li a {
-  color: #6c757d; /* Cor dos links */
-  text-decoration: none; /* Remove o sublinhado */
+  color: #6c757d;
+  text-decoration: none; 
   transition: color 0.3s;
 }
 
 .footer-column ul li a:hover {
-  color: #007bff; /* Cor do link ao passar o mouse */
+  color: #007bff; 
 }
 
-/* Rodapé inferior com informações de direitos autorais */
+/* Rodapé  */
 .footer-bottom {
   text-align: center;
-  border-top: 1px solid #dee2e6; /* Linha de separação */
+  border-top: 1px solid #dee2e6; 
   padding-top: 20px;
   margin-top: 20px;
 }
@@ -297,42 +290,26 @@ body {
   color: #007bff;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Seção principal que contém as duas colunas */
+/* Seção principal  duas colunas */
 .secao-dupla {
-  padding: 60px 0; /* Espaçamento geral da seção */
+  padding: 60px 0; 
 }
 
 /* O container que vai usar Flexbox */
 .secao-dupla .container {
   display: flex;
-  flex-wrap: wrap; /* Para quebrar a linha em telas menores */
-  gap: 40px; /* Espaço entre as colunas */
-  align-items: flex-start; /* Alinha as colunas pelo topo */
+  flex-wrap: wrap; 
+  gap: 40px; 
+  align-items: flex-start; 
 }
 
 /* Coluna da esquerda (Projetos) */
 .coluna-projetos {
-  flex: 1; /* Faz a coluna ocupar o espaço disponível */
-  min-width: 300px; /* Largura mínima para responsividade */
+  flex: 1;
+  min-width: 300px; 
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Espaço entre os cards de produto */
+  gap: 20px; 
 }
 
 /* Coluna da direita (Chamada para Ação) */
@@ -362,7 +339,7 @@ body {
   left: 0;
   width: 60px;
   height: 3px;
-  background-color: #f0ad4e; /* Cor da linha */
+  background-color: #f0ad4e; 
 }
 
 /* Estilos dos Cards de Produto */
