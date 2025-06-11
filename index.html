@@ -36,10 +36,10 @@
             </div><br>
 
             <div class="containerBotoes">
-                <button class="estiloBotoesQuadrado" ,> R$ 30</button>
+                <button class="estiloBotoesQuadrado"> R$ 30</button>
                 <button class="estiloBotoesQuadrado">R$ 80</button>
                 <button class="estiloBotoesQuadrado">R$ 100</button>
-                <input type="number" , class="inpt" , placeholder="Outro valor">
+                <input type="number" class="inpt" placeholder="Outro valor*">
             </div><br>
 
             <div class="containerBotoes">
@@ -104,7 +104,24 @@
             </ul>
         </div>
     </section>
+    <div class="centralizaContainer">
+        <div class="containerNewsLetter">
+            <div class="textoNewsLetter">
+                <h1>Assine nossa newsletter para ficar informado sobre novidades</h1>
+                <div class="containerBotoesDois">
+                    <input class="inpt" id="inptNome" placeholder="Nome*">
+                    <input class="inpt" id="inptEmail" placeholder="Email*">
+                    <input class="inpt" id= "inptCelular" placeholder="Celular*">
+                    <button style="border-radius: 20px;" id="btnAssinar" class="estiloBotoesTres">Assinar</button>
+                </div>
+            </div>
+        </div><br><br><br>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="WebApp.js"></script>
+    <script>
+        emailjs.init('4_TtoUqK9vAKW_8d6');
+    </script>
 </body>
 
 </html>
