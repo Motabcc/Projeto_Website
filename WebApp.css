@@ -1,21 +1,78 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
 body{
     background-color: rgb(255,255,255);
+    font-family: sans-serif;
+} /* */
+.centralizaContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.imagemUm {
+    width: 100%;
+    height: 900px; /* ou qualquer altura que você quiser */
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+
+.imagemUm img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    display: block;
+    transform: scaleX(-1); /* se quiser o efeito espelhado */
+}
+.imagemDois{
+    width: 80%;
+    height: 80%;
+    margin-top: 4%;
+    margin-left: 55%;
+    margin-right: 0;
+}
+.imagemDois img {
+    width: 50%;
+    height: 50%;
+}
+.containerLaranja{
+    font-weight: 600;
+    color:rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    z-index: 1;
+    margin-top: 8%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:  center;
-} /* */
-
-.imagem img{
-    flex-shrink: 0;
-    width: 174%;
-    max-height: 650px;
-    margin-left: -37.6%;
-    margin-top: -5%;
-    transform: scaleX(-1);
-    z-index: -1;
+    background-color: rgb(255, 216, 144);
+    padding: 50px;/* espaçamento interno*/
+    width: 100%;
 }
+.imagemDois{
+    width: 50%;
+    height: 900px; 
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+    margin-left:auto;
+}
+.imagemDois img {
+    width: 100%;
+    height: 100%;
 
+    object-fit: cover;
+    display: block;
+}
 .textoMenu{
     z-index: 1;
     color: white;
@@ -31,19 +88,38 @@ body{
 
 }
 .textoInicial{
+    font-weight: 600;
+    color:cadetblue;
+    font-family: Arial, sans-serif;
     z-index: 1;
-    margin-top: 18%;
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:  center;
     background-color: rgb(255, 255, 255);
     padding: 20px;/* espaçamento interno*/
-    width: 70%;
-    border-radius: 10px;
-    border: 2px solid black;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}   
+    width: 60%;
+    border-radius: 20px;
+    border: 0.01px solid rgb(207, 205, 205);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.textoCarangueijo{
+    font-weight: 500;
+    color:rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    z-index: 1;
+    margin-top: -34%;
+    margin-left: 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:  center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;/* espaçamento interno*/
+    width: 40%;
+    border-radius: 20px;
+}
 .segundoTexto{
     margin-top: 1%;
     display: flex;
@@ -53,7 +129,7 @@ body{
     background-color: white;
     padding: 20px;/* espaçamento interno*/
     width: 30%;
-    border-radius: 10px;
+    border-radius: 20px;
     border: 2px solid black;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;    
 }
@@ -62,57 +138,147 @@ body{
     gap:  15px;
     justify-content: center;
 }
-.estiloBotoes{
+.estiloBotoesRetangulo{
+    transition: transform 0.3s ease;
+    margin-top: 20px;
     padding: 15px 30px; 
-    font-size: 18px; 
+    font-size: 20px;
+    font-weight: 500; 
     background-color: #ffffff; 
     color: rgb(0, 0, 0);             
-    border: 2px, solid black;             
-    border-radius: 5px;     
+    border: 0.5px solid rgb(0, 0, 0);              
+    border-radius: 20px;     
+    cursor: pointer;
+    width: 300px;
+    height: 60px;
+}
+.estiloBotoesRetangulo:hover{
+    transform: translateY(-5px);
+}
+.estiloBotoesRetangulo:focus{
+    margin-top: 20px;
+    padding: 15px 30px; 
+    font-size: 20px;
+    font-weight: 500; 
+    background-color: rgb(39, 156, 3); 
+    color: rgb(0, 0, 0);             
+    border: 0.5px solid rgb(0, 0, 0);              
+    border-radius: 20px;     
+    cursor: pointer;
+    width: 300px;
+    height: 60px;
+}
+.estiloBotoesQuadrado{
+    transition: transform 0.3s ease;
+    padding: 15px 30px; 
+    font-size: 40px;
+    font-weight:bold; 
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0);             
+    border: 0.01px solid rgb(207, 205, 205);             
+    border-radius: 20px;    
     cursor: pointer;
     width: 200px;
+    height: 160px;
 }
-.estiloBotoes:focus{
-  background-color: rgb(39, 156, 3);
-  border: 2px solid rgb(0, 0, 0);
-  color: black;
-  cursor: pointer;
+.estiloBotoesQuadrado:hover{
+    transform: translateY(-5px);
+}
+.estiloBotoesQuadrado:focus{
+    padding: 15px 30px; 
+    font-size: 40px;
+    font-weight:bold; 
+    background-color: rgb(39, 156, 3);  
+    color: rgb(0, 0, 0);             
+    border: 0.01px solid rgb(207, 205, 205);             
+    border-radius: 20px;    
+    cursor: pointer;
+    width: 200px;
+    height: 160px;
 }
 .estiloBotoesDois{
+    margin-top: 50px;
     padding: 15px 30px; 
-    font-size: 18px; 
-    background-color: #ffffff; 
-    color: rgb(0, 0, 0);             
-    border: 2px, solid black;             
-    border-radius: 5px;     
-    cursor: pointer;
-    width: 200px;
-}
-.estiloBotoesDois:focus{
-  background-color: rgb(39, 156, 3);
-  border: 2px solid rgb(0, 0, 0);
-  color: black;
-  cursor: pointer;
-}
-.estiloBotoesTres{
-    padding: 15px 30px; 
-    font-size: 18px; 
+    font-size: 20px; 
     background-color: rgb(39, 156, 3); 
-    color: rgb(255, 255, 255);             
-    border: 2px, solid black;             
-    border-radius: 5px;     
+    color: rgb(0, 0, 0);             
+    border: 0.01px solid rgb(207, 205, 205);             
+    border-radius: 14px;     
     cursor: pointer;
-    width: 200px;
+    width: 250px;
 }
-
-
 .inpt{
+    transition: transform 0.3s ease;
     padding: 15px 30px; 
-    font-size: 18px; 
+    font-size: 20px;
+    font-weight: bold; 
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);             
-    border: 2px, solid black;            
-    border-radius: 5px;       
+    border: 0.01px solid rgb(207, 205, 205);            
+    border-radius: 20px;       
     cursor: pointer;
-    width: 150px;
+    width: 200px;
 }
+.inpt:hover{
+    transform: translateY(-5px);
+}
+.botaoSelecionado {
+    background-color: rgb(39, 156, 3);
+    color: rgb(0, 0, 0);
+    border: 0.01px solid rgb(207, 205, 205); 
+}
+
+/* Cabeçalho */
+.wwf-header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+   
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* Menu de Navegação (Regras Unificadas) */
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #080808;
+    font-weight: 500;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    padding: 5px 0;
+}
+
+.nav-menu a:hover {
+    color: #fe7b00;
+}
+
+.nav-menu a.button-doe:hover {
+    background-color: #2b8a21;
+    transform: scale(1.05);
+}
+

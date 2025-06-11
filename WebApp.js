@@ -1,14 +1,19 @@
 //alert("Oi") //Cria um alerta e interrompe toda a execução
 console.log("Script Inicializado");
 
+
+const botoesTipo = document.querySelectorAll('.tipoDoacao');
 const inputNome = document.getElementById("inputNome"); //Pega um elemento pelo ID
 const inputSenha = document.getElementById("inputSenha"); //Pega um elemento pelo ID; const = constante
 const btnSalvar = document.getElementById("btnSalvar"); //Pega um elemento pelo ID
 const divResponse = document.getElementById("response");
 const Head = document.getElementById("head")
+const btnPagamento = document.getElementById("btnPagamento")
 
-btnSalvar.addEventListener('click',btnSalvarClick); //() => {}, cria a função dentro dele
 
+if (btnSalvar) {
+    btnSalvar.addEventListener('click', btnSalvarClick);
+}
 function btnSalvarClick(){
     console.log("btn clicado")
     readTxt() // cria uma execução asincrona, ele vai tudo que vem depois a mesmo tempo // tem o await para fazer as coisas esperarem a exxecução da função e torna a função principal em async
@@ -55,4 +60,18 @@ function credValidate(credenciais){
     let txtSenha = credenciais.split("/")[1]
 
     return inptNome == txtNome && inptSenha == txtSenha
+}
+botoesTipo.forEach(botao => {
+        botao.addEventListener('click', () => {
+            // Remove a classe de todos os botões
+            botoesTipo.forEach(b => b.classList.remove('botaoSelecionado'));
+            // Adiciona a classe ao botão clicado
+            botao.classList.add('botaoSelecionado');
+        });
+    });
+
+btnPagamento.addEventListener('click', btnPagamentoClick);
+function btnPagamentoClick(){
+    window.open('https://www.youtube.com/watch?v=LavcrI0F6LE', 'popupPagamento', 'width=600,height=400');
+
 }
