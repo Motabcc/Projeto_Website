@@ -13,6 +13,7 @@ body{
     font-family: sans-serif;
 } /* */
 .centralizaContainer {
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,6 +58,19 @@ body{
     background-color: rgb(255, 216, 144);
     padding: 50px;/* espaçamento interno*/
     width: 100%;
+=======
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.imagemUm {
+    width: 100%;
+    height: 900px; /* ou qualquer altura que você quiser */
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+>>>>>>> 2fa9f19901dec6d20eee30f0cdb42e55797df75d
 }
 .imagemDois{
     width: 50%;
@@ -70,6 +84,26 @@ body{
     width: 100%;
     height: 100%;
 
+<<<<<<< HEAD
+=======
+.imagemUm img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    display: block;
+    transform: scaleX(-1); /* se quiser o efeito espelhado */
+}
+.imagemDois{
+    width: 80%;
+    height: 80%;
+    margin-top: 4%;
+    margin-left: 55%;
+    margin-right: 0;
+}
+.imagemDois img {
+    width: 50%;
+    height: 50%;
+>>>>>>> 2fa9f19901dec6d20eee30f0cdb42e55797df75d
     object-fit: cover;
     display: block;
 }
@@ -218,6 +252,17 @@ body{
     border-radius: 20px;       
     cursor: pointer;
     width: 200px;
+<<<<<<< HEAD
+=======
+}
+.inpt:hover{
+    transform: translateY(-5px);
+}
+.botaoSelecionado {
+    background-color: rgb(39, 156, 3);
+    color: rgb(0, 0, 0);
+    border: 0.01px solid rgb(207, 205, 205); 
+>>>>>>> 2fa9f19901dec6d20eee30f0cdb42e55797df75d
 }
 .inpt:hover{
     transform: translateY(-5px);
