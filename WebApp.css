@@ -33,36 +33,48 @@ body{
     display: block;
     transform: scaleX(-1); /* se quiser o efeito espelhado */
 }
-
+.containerCarangueijo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas pequenas */
+    position: relative;
+    z-index: 0;
+    margin-top: -40px;
+    padding-bottom: 100px;
+}
 .containerLaranja{
     font-weight: 600;
     color:rgb(0, 0, 0);
     font-family: Arial, sans-serif;
     z-index: 1;
-    margin-top: 8%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:  center;
-    background-color: rgb(255, 216, 144);
-    padding: 50px;/* espaçamento interno*/
+    background-color: rgb(255, 236, 201);
+    padding: 40px;/* espaçamento interno*/
     width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-top: -220px;
+}
+
+.icone {                                    /*imagen pequena em cima da parte de nossos objetivos*/
+  width: 100px;
+  height: auto;
 }
 .imagemDois{
-    width: 50%;
-    height: 900px; 
-    overflow: hidden;
-    position: relative;
+    flex: 1;
+    min-width: 250px;
+    text-align: right;
     z-index: -1;
-    left: 50vw;
-    background-color: #fe7b00;
 }
 .imagemDois img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    object-fit: cover;
-    display: block;
-    background-color: #fe7b00;
+    border-radius: 8px;
 }
 .textoMenu{
     z-index: 1;
@@ -74,9 +86,8 @@ body{
     margin: 10px; /*Espaçamento externo */
     font-size: 300%;
     margin-top: -30%;
-    font-family: Chalkduster, fantasy;
+    font-family: 'Chalkduster, fantasy';
     font-weight: 700;
-
 }
 .textoInicial{
     font-weight: 600;
@@ -96,21 +107,16 @@ body{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .textoCarangueijo{
-    font-weight: 500;
-    position: relative;
-    left: 8vw;
-    bottom: 50vw;
+    margin-bottom: 40px;
+    padding-left: 200px;
+    font-weight: 600;
+    font-size: large;
     color:rgb(0, 0, 0);
     font-family: Arial, sans-serif;
     z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content:  center;
     background-color: rgb(255, 255, 255);
-    padding: 20px;/* espaçamento interno*/
-    width: 50%;
-    border-radius: 20px;
+    flex: 1;
+    min-width: 250px;
 }
 .segundoTexto{
     margin-top: 1%;
@@ -219,7 +225,51 @@ body{
     color: rgb(0, 0, 0);
     border: 0.01px solid rgb(207, 205, 205); 
 }
-
+.textoContainerLaranja{
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: large;
+    font-weight: 600;
+    color:rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    z-index: 1;
+    background-color: rgb(255, 236, 201);
+    flex: 1;
+    min-width: 250px;
+}
+.solucoesBeneficios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 40px 20px;
+}
+.bloco {                            /*arrumando o bloco de soluções e benefícios*/
+    margin-top: 60px;   
+    background-color: rgb(0, 121, 50); /* verde escuro */
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    flex: 1 1 400px;
+    max-width: 600px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.bloco h2 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.bloco ul {
+    padding-left: 20px;
+}
+.bloco li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: large;
+}
 /* Cabeçalho */
 .wwf-header {
     background-color: #FFFFFF;
