@@ -1,195 +1,288 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <title>Eco Education</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imagens/terra.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
-    
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-
-        img {
-            max-width: 100%;
-        }
-
-        .lixo_container {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            background-color: #f4f4f4;
-            padding: 10px;
-        }
-
-        .lixo_container img {
-            width: 100px;
-            height: auto;
-            margin-right: 20px;
-            border-radius: 8px;
-        }
-
-        .lixo_container p {
-            margin: 0;
-        }
-    </style>
 </head>
 
 <body>
-    <header class="wwf-header">
-        <div class="container">
-            <div class="logo">
-                <img src="imagens/terra.png" alt="Logo da Eco Education">
-                <img src="imagens/logo-pag.png" alt="Logo da Eco Education">
+    <section id="inicio">
+        <header class="site-header">
+            <div class="container">
+                <a href="index.html" class="logo-composto-link">
+                    <img src="imagens/terra.png" alt="Ícone do Planeta Terra" class="logo-terra">
+                    <img src="imagens/logo-pag.png" alt="Logo da Eco Education" class="logo-principal">
+                </a>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#artigos">Artigos</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#" class="button-doe">Doe</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#" class="button-doe">Doe</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+        </header>
+
+        <main>
+            <section id="hero-section" class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-background" style="background-image: url('imagens/aterro.jpg');"></div>
+                        <div class="texto-hero-container">
+                            <h1 id="frase_lixo">Aterros Sanitários</h1>
+                            <p class="subtitulo-hero">
+                                De acordo com a pesquisa sobre saneamento básico do IBGE, três em cada dez municípios
+                                brasileiros
+                                continuam usando lixões (31,9%). São locais de despejo de resíduos sem nenhum tipo de
+                                controle
+                                ou
+                                tratamento, que causam diversos problemas ambientais, além de fragilizar a saúde dos
+                                moradores.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="slide-background" style="background-image: url('imagens/Gemini_recicla.png');"></div>
+                        <div class="texto-hero-container">
+                            <h1 id="frase_lixo">Reciclagem</h1>
+                            <p class="subtitulo-hero">
+                                A reciclagem transforma resíduos em novos produtos, reduzindo o consumo de
+                                matérias-primas e energia. reciclagem de resíduos sólidos urbanos ainda enfrenta
+                                desafios, mas diversas iniciativas e notícias recentes demonstram avanços e
+                                oportunidades para melhorar a gestão de resíduos e promover a economia circular.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="slide-background" style="background-image: url('imagens/energia_reciclave.png');">
+                        </div>
+                        <div class="texto-hero-container">
+                            <h1 id="frase_lixo">Energias Renováveis</h1>
+                            <p class="subtitulo-hero">
+                                O Brasil tem batido recordes na geração de energia renovável, com destaque para a
+                                expansão da energia solar e o aumento da participação de fontes renováveis na matriz
+                                energética. Além disso, a indústria nacional tem investido cada vez mais em fontes
+                                limpas, com 48% das empresas relatando ações ou projetos nesse sentido.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </section>
+        </main>
+    </section>
 
     <main>
-        <h1>Reciclar é transformar o mundo começando por você.</h1>
+        <h1 id="artigos" class="titulo-secao-principal">Artigos</h1>
 
-        <h2>De onde surgiu o processo de reciclagem?</h2>
-        <p>
-            A separação de lixo não foi inventada por uma única pessoa.
-            Essa prática é tão antiga quanto a própria humanidade, com povos antigos reutilizando materiais para criar novos itens.
-            No entanto, o inventor da separação de lixo moderna foi Gary Anderson, um jovem estudante de Arquitetura e Ciências Sociais da Universidade da Califórnia do Sul.
-            A separação do lixo é fundamental para a preservação do meio ambiente, a saúde pública e a economia.
-        </p>
+        <div class="container-de-cards">
+            <a href="https://semanaacademica.org.br/system/files/artigos/reciclagem.pdf" target="_blank"
+                class="card-link">
+                <div class="card">
+                    <img src="Imagens/Reciclagem.jpg" alt="Preservação Ambiental">
+                    <div class="card-content">
+                        <h3>O Primeiro Passo para a Preservação Ambiental</h3>
+                        <p>O texto destaca que, apesar do crescente desejo das pessoas em contribuir para a preservação
+                            ambiental, muitas não sabem como começar. A reciclagem é apresentada como um primeiro passo
+                            simples e fundamental.
+                            A principal motivação é a preocupação com as futuras gerações (filhos e netos), que
+                            enfrentarão a escassez de recursos e a extinção de espécies se os padrões de consumo atuais
+                            continuarem.
+                            .</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.scielo.br/j/asoc/a/yz9dCj97KwGZ4DVFFRPTbLQ/" target="_blank" class="card-link">
+                <div class="card">
+                    <img src="Imagens/ecologia.jpg" alt="Olhar ecológico">
+                    <div class="card-content">
+                        <h3>Um Olhar Para a Ecologia</h3>
+                        <p>O objetivo é oferecer uma análise da produção científica sobre sustentabilidade em ecologia e
+                            economia, nas décadas marcadas pelo intervalo entre Rio92 e Rio+20. Pretende-se observar as
+                            transformações conceituais do termo nas ciências que alimentam, de forma hegemônica, o
+                            debate sobre meio ambiente e desenvolvimento.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://wp.ufpel.edu.br/coisapublica/2023/09/06/o-descarte-incorreto-de-lixo-no-brasil-e-o-impacto-causado-na-populacao/"
+                target="_blank" class="card-link">
+                <div class="card">
+                    <img src="Imagens/lixo.jpg" alt="Descarte Incorreto">
+                    <div class="card-content">
+                        <h3>O Descarte Incorreto de Lixo no Brasil</h3>
+                        <p>O ensaio de Lara Yamamura Garcia analisa os graves impactos do descarte incorreto de lixo nos
+                            centros urbanos do Brasil e seus efeitos na saúde pública e na qualidade de vida da
+                            população. O texto aponta que o crescimento desordenado das cidades, a falta de acesso à
+                            coleta regular para 24% dos domicílios e a desinformação por parte do governo criam um
+                            cenário vulnerável.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
 
-        <h2>Qual a importância da reciclagem?</h2>
-        <p>
-            Ao separar corretamente os resíduos recicláveis (como papel, plástico, vidro e metal) dos orgânicos e rejeitos,
-            facilita-se a reciclagem e o reaproveitamento de materiais, reduzindo a necessidade de explorar novos recursos
-            naturais Essa prática também diminui a poluição do solo, da água e do ar, contribui para a redução do volume de
-            lixo nos aterros sanitários e prolonga sua vida útil. Além disso, gera empregos e renda para muitas pessoas 
-            envolvidas na cadeia da reciclagem, desde catadores até trabalhadores de cooperativas. Separar o lixo ainda 
-            promove a conscientização sobre o consumo e os impactos dos resíduos gerados, incentivando hábitos mais sustentáveis.
-            Em muitos locais, essa prática é obrigatória por lei, colaborando com o cumprimento das normas ambientais. Portanto,
-            separar o lixo é uma atitude simples, mas com grandes benefícios para a sociedade e o planeta.
-    </p>
-</main>
-    <div class = "lixo_container">
-        <img
-            src="imagens/lixo_azul.png"
-            alt="Papel">
-            
-        <p><strong>Papel</strong><br><strong>O que vai:</strong> jornais, revistas, folhas de caderno, caixas de papelão, embalagens de papel, envelopes, papel sulfite, rascunhos e cartolinas.<br>
-<strong>O que não vai:</strong> papéis engordurados, papel higiênico, papel carbono, guardanapos sujos, fotografias.<br>
-<strong>Função:</strong> A lixeira azul é destinada ao descarte de materiais de papel limpos e secos. <br>
-Esse tipo de resíduo pode ser reciclado e transformado em novos produtos, como papel reciclado, caixas e embalagens.<br>
- A separação correta ajuda a reduzir o corte de árvores e o consumo de água na produção de papel novo.
- </p>
-    </div>
-    <div class="lixo_container">
-        <img
-             src="imagens/lixo_vermelho.png"
-             alt="Plástico">
-            
-             
-    <p><strong>Plástico</strong> <br><strong>O que vai:</strong> garrafas PET, potes de alimentos, sacolas plásticas, frascos de produtos de limpeza, brinquedos de plástico,
-         tubos de pasta de dente.<br>
-<strong>O que não vai:</strong> plásticos sujos de alimento, isopor sujo, embalagens de remédios.<br>
-<strong>Função:</strong> O plástico demora centenas de anos para se decompor. Separá-lo adequadamente permite que ele seja reciclado e usado na produção de novos objetos, como vassouras, baldes, tecidos e até peças de veículos. A reciclagem ajuda a reduzir o volume de resíduos em aterros sanitários e a poluição dos oceanos.
-</p>
-  </div>
-  <div class="lixo_container">
-        <img 
-            src="imagens/lixo_amarelo.png"
-            alt="Metal">
-    <p><strong>Metal</strong> <br><strong>O que vai:</strong> latas de refrigerante, tampas de metal, embalagens metálicas, arames, alumínio, pregos, talheres metálicos velhos.<br>
-<strong>O que não vai:</strong> pilhas, baterias, objetos enferrujados perigosos, latas de tinta ou solventes com resíduos.<br>
-<strong>Função:</strong> Os metais recicláveis podem ser fundidos e reutilizados em vários setores industriais, economizando energia e matérias-primas. 
-A reciclagem de alumínio, por exemplo, consome até 95% menos energia do que a produção a partir do minério.
-</p>
-  </div>
-  <div class="lixo_container">
-        <img 
-            src="imagens/lixo_verde.png"
-            alt="Vidro">
-    <p><strong>Vidro</strong><br><strong>O que vai:</strong> garrafas, frascos de alimentos, potes, copos e vidros de conserva.<br>
-<strong>O que não vai: </strong>espelhos, vidros temperados, cerâmicas, porcelanas, lâmpadas e vidro quebrado solto.<br>
-<strong>Função:</strong> O vidro é 100% reciclável e pode ser reaproveitado infinitamente sem perder qualidade. <br>
-A separação correta evita acidentes com os coletores e facilita o reaproveitamento na indústria para novos frascos e produtos.
-</p>
-  </div>
 
-  <div class="lixo_container">
-        <img 
-             src="imagens/lixo_marrom.png"
-             alt="Orgânico">
-    <p><strong>Orgânico</strong><br> <strong>O que vai:</strong> restos de comida, cascas de frutas e legumes, borra de café, chá, alimentos vencidos, folhas secas.<br>
-<strong>O que não vai:</strong> carne crua, fezes de animais, óleos e gorduras, ossos grandes.<br>
-<strong>Função:</strong> Os resíduos orgânicos são biodegradáveis e podem ser transformados em adubo (composto orgânico) por meio da compostagem. Isso reduz a quantidade de lixo enviado a aterros sanitários e melhora a fertilidade do solo em hortas e jardins.
-</p>
-  </div>
 
-<footer class="site-footer">
-    <div class="footer-container">
-        <div class="footer-column">
-            <h4>Quem Somos</h4>
+
+
+        <section id="projetos" class="secao-dupla">
+            <div class="container">
+                <div class="coluna-projetos">
+                    <div class="titulo-secao">
+                        <h2>Projetos</h2>
+                    </div>
+                    <div class="card-produto">
+                        <a href="https://www.pucpr.br/noticias/estudantes-da-pucpr-participam-de-acao-social-que-faz-troca-de-material-reciclavel-por-alimento/"
+                            target="_blank">
+                            <img src="Imagens/material.jpg" alt="Material Reciclável por alimento!">
+                            <div class="info-produto">
+                                <p>VEJA AQUI</p>
+                                <h4>Troca de material reciclável por alimento</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-produto">
+                        <a href="https://www.pucpr.br/noticias/academicos-da-pucpr-dao-suporte-ao-projeto-reciclar-e-viver/"
+                            target="_blank">
+                            <img src="imagens/vaca.jfif" alt="Projeto Reciclar é Viver">
+                            <div class="info-produto">
+                                <p>VEJA AQUI</p>
+                                <h4>Estudantes da PUCPR dão suporte ao Projeto Reciclar é Viver</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-produto">
+                        <a href="https://www.pucpr.br/noticias/atividade-do-projeto-comunitario-contribui-para-preservacao-do-meio-ambiente/"
+                            target="_blank">
+                            <img src="Imagens/reflorestamento.jpg" alt="Preservando o meio ambiente">
+                            <div class="info-produto">
+                                <p>VEJA AQUI</p>
+                                <h4>Estudantes ajudam no plantio de mudas de árvores nativas</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="coluna-acao">
+                    <div class="imagem-destaque">
+                        <a href="https://www.pucpr.br/noticias/projeto-comunitario/estudantes-da-pucpr-participam-de-atividade-de-conservacao-ambiental/"
+                            target="_blank">
+                            <img src="Imagens/voluntariado_baitaca_2_iat.jpg" alt="Conservação Ambiental">
+                        </a>
+                    </div>
+                    <div class="texto-destaque">
+                        <h2>Estudantes da PUCPR participam de atividade de conservação ambiental</h2>
+                        <p>A ação foi realizada no Parque Estadual Serra da Baitaca, em parceria com o Projeto
+                            Comunitário e o IAT PR.</p>
+                        <a href="#" class="botao-doe">DOE AGORA</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contato" class="site-footer">
+        <div class="footer-logo-area">
+            <a href="#" class="footer-logo-composto-link">
+                <img src="imagens/terra.png" alt="Ícone do Planeta Terra" class="footer-logo-terra">
+                <img src="imagens/logo-pag.png" alt="Logo da Eco Education" class="footer-logo-principal">
+            </a>
+            <p class="footer-tagline">Promovendo a conscientização ambiental para um futuro sustentável.</p>
+            <div class="footer-social-icons">
+
+                <a href="https://www.instagram.com/ecoeducationcompany/" target="_blank">
+                    <img src="imagens/image-removebg-preview (1).png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/@ecoeducation-m3c" target="_blank">
+                    <img src="imagens/image-removebg-preview.png" alt="YouTube">
+                </a>
+                <div class="icone-copiar-container">
+                    <a id="copiarEmail" href="mailto:ecoeducation91@gmail.com">
+                        <img src="imagens/image-removebg-preview (2).png" alt="Copiar E-mail">
+                    </a>
+                    <span id="copia-feedback" class="feedback-oculto">Copiado!</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Quem Somos</h4>
+                <ul>
+                    <li><a href="https://github.com/Motabcc" title="Github do Gabriel Mota" target="_blank">Gabriel
+                            Mota</a></li>
+                    <li><a href="https://github.com/vMigliorini" title="Github do Vicente Miglioniri"
+                            target="_blank">Vicente Miglioniri</a></li>
+                    <li><a href="https://github.com/joaovictorsucha" title="Github do João Victor Sucha"
+                            target="_blank">João Victor Sucha</a></li>
+                    <li><a href="https://github.com/Leopardo234t" title="Github do Leonardo de Oliveira"
+                            target="_blank">Leonardo de Oliveira</a></li>
+                    <li><a href="https://github.com/HenriqueProst" title="Github do Henrique Prost"
+                            target="_blank">Henrique Proust</a></li>
+                    <li><a href="https://github.com/HenriqueZade" title="Github do Henrique Zadereski"
+                            target="_blank">Henrique Zadereski</a></li>
+                    <li><a href="https://github.com/V-in-C" title="Github do Victor Souza" target="_blank">Victor
+                            Souza</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Projetos</h4>
+                <ul>
+                    <li><a
+                            href="https://www.pucpr.br/noticias/estudantes-da-pucpr-participam-de-acao-social-que-faz-troca-de-material-reciclavel-por-alimento/">Material
+                            Reciclável por alimento</a></li>
+                    <li><a
+                            href="https://www.pucpr.br/noticias/academicos-da-pucpr-dao-suporte-ao-projeto-reciclar-e-viver/">Projeto
+                            Reciclar é Viver</a></li>
+                    <li><a
+                            href="https://www.pucpr.br/noticias/atividade-do-projeto-comunitario-contribui-para-preservacao-do-meio-ambiente/">Preservando
+                            o meio ambiente</a></li>
+                    <li><a
+                            href="https://www.pucpr.br/noticias/projeto-comunitario/estudantes-da-pucpr-participam-de-atividade-de-conservacao-ambiental/">Conservação
+                            Ambiental</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Artigos</h4>
+                <ul>
+                    <li><a href="https://semanaacademica.org.br/system/files/artigos/reciclagem.pdf"
+                            target="_blank">Preservação Ambiental</a></li>
+                    <li><a href="https://www.scielo.br/j/asoc/a/yz9dCj97KwGZ4DVFFRPTbLQ/" target="_blank">Olhar
+                            ecológico</a></li>
+                    <li><a href="https://wp.ufpel.edu.br/coisapublica/2023/09/06/o-descarte-incorreto-de-lixo-no-brasil-e-o-impacto-causado-na-populacao/"
+                            target="_blank">Descarte Incorreto</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Participe</h4>
+                <ul>
+                    <li><a href="#">Doe Agora</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Eco Education. Todos os direitos reservados.</p>
             <ul>
-                <li><a href="https://github.com/Motabcc" title="Github-Motabcc" target="_blank">Gabriel Mota</a>
-                </li>
-                <li><a href="#">Vicente Miglioniri</a></li>
-                <li><a href="#">João Victor Sucha</a></li>
-                <li><a href="#">Leonardo de Oliveira</a></li>
-                <li><a href="#">Henrique Proust</a></li>
-                <li><a href="https://github.com/HenriqueZade" tittle="Github-HenriqueOZ" target="_blank">Henrique Zadereski</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Termos e Condições de Uso</a></li>
             </ul>
         </div>
-        <div class="footer-column">
-            <h4>Projetos</h4>
-            <ul>
-                <li><a href="#">Material Reciclável por alimento !</a></li>
-                <li><a href="#">Projeto Reciclar é Viver.</a></li>
-                <li><a href="#">Preservando o meio ambiente</a></li>
-                <li><a href="#">Conservação Ambiental</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h4>Artigos</h4>
-            <ul>
-                <li><a href="#">Preservação Ambiental</a></li>
-                <li><a href="#">Olhar ecológico</a></li>
-                <li><a href="#">Descarte Incorreto</a></li>
-
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h4>Participe</h4>
-            <ul>
-                <li><a href="#">Doe Agora</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2025 Seu Site. Todos os direitos reservados.</p>
-        <ul>
-            <li><a href="#">Política de Privacidade</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Termos e Condições de Uso</a></li>
-        </ul>
-    </div>
-</footer>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
 
 </body>
+
 </html>
